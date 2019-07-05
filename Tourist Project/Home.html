@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>DTA</title>
+		<link rel="shortcut icon" href="bangladesh.ico" />
+		<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<div class="header">
+					<div class="logotext"><h1><b>Dhaka Travel Agency</b></h1></div>
+					<marquee class="marq">***Welcome to Dhaka Travel Agency***</marquee>
+					<div class="nav">
+						<ul>
+							<li><a href="Contact.html">Contact Us</a></li>
+							<li><a href="Gallery.html">Gallery</a></li>
+							<li>
+								<div class="dropdown">
+									<a href="Package.html">Package</a>
+									<div class="dropdown-content">
+										<ul>
+											<li><a href="Chittagong.html">Chittagong</a></li>
+											<li><a href="Khulna.html">Khulna</a></li>
+											<li><a href="Sylhet.html">Sylhet</a></li>
+											<li><a href="Rajshahi.html">Rajshahi</a></li>
+											<li><a href="Barisal.html">Barisal</a></li>
+											<li><a href="Comilla.html">Comilla</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li><a href="Home.html">Home</a></li>
+						</ul>
+					</div>
+				</div>
+		
+				<div class="full-content">
+					<div class="w3-content w3-section" style="max-width:500px">
+						<img class="mySlides" src="Slideshows/img1.jpg" style="width:224%">
+						<img class="mySlides" src="Slideshows/img2.jpg" style="width:224%">
+						<img class="mySlides" src="Slideshows/img3.jpg" style="width:224%">
+						<img class="mySlides" src="Slideshows/img4.jpg" style="width:224%">
+						<img class="mySlides" src="Slideshows/img5.jpg" style="width:224%">
+						<img class="mySlides" src="Slideshows/img6.jpg" style="width:224%">
+						<img class="mySlides" src="Slideshows/img7.jpg" style="width:224%">
+					</div>
+				</div>
+		
+				<div class="footer">
+					<p>&copy;Dhaka Travel Agency</p>
+				</div>
+	 
+			</div>
+		</div>
+	
+		<!--Slide Show Home page JS-->
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+				}
+				myIndex++;
+				if (myIndex > x.length) {myIndex = 1}    
+				x[myIndex-1].style.display = "block";  
+				setTimeout(carousel, 3000); // Change image every 2 seconds
+			}
+		</script>
+	</body>
+</html>
